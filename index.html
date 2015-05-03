@@ -2,30 +2,13 @@
 <html lang="en-us">
   <head>
     <meta charset="UTF-8">
-    <title>Pulpopaul.GitHub.io by pulpopaul</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-  </head>
-  <body>
-    <section class="page-header">
-      <h1 class="project-name">Pulpopaul.GitHub.io</h1>
-      <h2 class="project-tagline"></h2>
-    </section>
+    <title>Classic parallax page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
-    <section class="main-content">
-      <p>&lt;!DOCTYPE html&gt;
 
-</p>
-    
 
-<pre><code>&lt;meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"&gt;
+<style type="text/css">
 
-&lt;title&gt;Classic parallax page&lt;/title&gt;
-
-&lt;style type="text/css"&gt;
 * {
     padding:0;
     margin:0;
@@ -132,109 +115,96 @@ p {
 #done {
     height:100%;
 }
-&lt;/style&gt;
-</code></pre>
+</style>
 
-<p></p>
+<body>
 
-<p></p>
-    &lt;!--
+    <!--
         We position the images fixed and therefore need to place them outside of #skrollr-body.
         We will then use data-anchor-target to display the correct image matching the current section (.gap element).
-    --&gt;
+    -->
 
-<pre><code>&lt;div
+<div
     class="parallax-image-wrapper parallax-image-wrapper-100"
     data-anchor-target="#dragons + .gap"
     data-bottom-top="transform:translate3d(0px, 200%, 0px)"
-    data-top-bottom="transform:translate3d(0px, 0%, 0px)"&gt;
+    data-top-bottom="transform:translate3d(0px, 0%, 0px)">
 
-    &lt;!-- This is the first image
-    the +/-80% translation can be adjusted to control the speed difference of the image--&gt;
-    &lt;div
+    <!-- This is the first image
+    the +/-80% translation can be adjusted to control the speed difference of the image-->
+    <div
         class="parallax-image parallax-image-100"
         style="background-image:url(kittens/kitteh1.jpg)"
         data-anchor-target="#dragons + .gap"
         data-bottom-top="transform: translate3d(0px, -80%, 0px);"
         data-top-bottom="transform: translate3d(0px, 80%, 0px);"
-    &gt;&lt;/div&gt;
+    ></div>
 
-&lt;/div&gt;
+</div>
 
-&lt;div
+<div
     class="parallax-image-wrapper parallax-image-wrapper-100"
     data-anchor-target="#bacons + .gap"
     data-bottom-top="transform:translate3d(0px, 200%, 0px)"
-    data-top-bottom="transform:translate3d(0px, 0%, 0px)"&gt;
+    data-top-bottom="transform:translate3d(0px, 0%, 0px)">
 
-    &lt;div
+    <div
         class="parallax-image parallax-image-100"
         style="background-image:url(kittens/kitteh2.jpg)"
         data-anchor-target="#bacons + .gap"
         data-bottom-top="transform: translate3d(0px, -80%, 0px);"
         data-top-bottom="transform: translate3d(0px, 80%, 0px);"
-    &gt;&lt;/div&gt;
-&lt;/div&gt;
+    ></div>
+</div>
 
-&lt;div
+<div
     class="parallax-image-wrapper parallax-image-wrapper-50"
     data-anchor-target="#kittens + .gap"
     data-bottom-top="transform:translate3d(0px, 300%, 0px)"
-    data-top-bottom="transform:translate3d(0px, 0%, 0px)"&gt;
+    data-top-bottom="transform:translate3d(0px, 0%, 0px)">
 
-    &lt;div
+    <div
         class="parallax-image parallax-image-50"
         style="background-image:url(kittens/kitteh3.jpg)"
         data-anchor-target="#kittens + .gap"
         data-bottom-top="transform: translate3d(0px, -60%, 0px);"
         data-top-bottom="transform: translate3d(0px, 60%, 0px);"
-    &gt;&lt;/div&gt;
-&lt;/div&gt;
+    ></div>
+</div>
 
-&lt;div id="skrollr-body"&gt;
-    &lt;div class="header" id="dragons"&gt;
+<div id="skrollr-body">
+    <div class="header" id="dragons">
         Skrollr demo of classic parallax sections. Degrades without JavaScript (could be disabled on mobile without breaking everything).
-    &lt;/div&gt;
+    </div>
 
-    &lt;div class="gap gap-100" style="background-image:url(images/kitteh2.jpg);"&gt;&lt;/div&gt;
-    &lt;div class="content" id="bacons"&gt;
-        &lt;p&gt;Landjaeger chicken ham fatback sausage hamburger, tri-tip capicola pastrami pancetta ribeye turducken. Rump shank turkey pig kevin sausage meatloaf tenderloin drumstick short ribs short loin. Prosciutto spare ribs chuck, pork strip steak pork chop swine bacon turkey shoulder andouille. Jowl landjaeger chicken corned beef. Ham hock kielbasa pancetta ground round sausage. Spare ribs porchetta pastrami filet mignon drumstick ball tip. Beef ribs prosciutto kevin, landjaeger shoulder ham hock ham brisket sirloin chuck t-bone drumstick kielbasa pork chop.&lt;/p&gt;
+    <div class="gap gap-100" style="background-image:url(images/kitteh2.jpg);"></div>
+    <div class="content" id="bacons">
+        <p>Landjaeger chicken ham fatback sausage hamburger, tri-tip capicola pastrami pancetta ribeye turducken. Rump shank turkey pig kevin sausage meatloaf tenderloin drumstick short ribs short loin. Prosciutto spare ribs chuck, pork strip steak pork chop swine bacon turkey shoulder andouille. Jowl landjaeger chicken corned beef. Ham hock kielbasa pancetta ground round sausage. Spare ribs porchetta pastrami filet mignon drumstick ball tip. Beef ribs prosciutto kevin, landjaeger shoulder ham hock ham brisket sirloin chuck t-bone drumstick kielbasa pork chop.</p>
 
-        &lt;p&gt;Landjaeger spare ribs chicken ball tip, filet mignon frankfurter ribeye tenderloin corned beef. Strip steak boudin pork loin, chicken turkey ball tip beef ribs ground round shank ham hock. Kevin capicola beef, chuck pork chop shoulder brisket doner meatloaf shank ham hock tenderloin. Chuck ham hock short ribs ground round sausage prosciutto shoulder bacon andouille tri-tip beef biltong filet mignon chicken. Pork belly andouille shank, bacon sausage meatloaf bresaola pork chop short ribs t-bone. Ham hock salami porchetta bacon beef turkey, strip steak kielbasa pancetta brisket meatball t-bone.&lt;/p&gt;
+        <p>Landjaeger spare ribs chicken ball tip, filet mignon frankfurter ribeye tenderloin corned beef. Strip steak boudin pork loin, chicken turkey ball tip beef ribs ground round shank ham hock. Kevin capicola beef, chuck pork chop shoulder brisket doner meatloaf shank ham hock tenderloin. Chuck ham hock short ribs ground round sausage prosciutto shoulder bacon andouille tri-tip beef biltong filet mignon chicken. Pork belly andouille shank, bacon sausage meatloaf bresaola pork chop short ribs t-bone. Ham hock salami porchetta bacon beef turkey, strip steak kielbasa pancetta brisket meatball t-bone.</p>
 
-        &lt;p&gt;Chicken pancetta capicola chuck, turkey meatball jerky frankfurter kielbasa ball tip bacon ground round. Beef ribs brisket meatloaf short ribs landjaeger shankle spare ribs sausage, pancetta swine sirloin flank. Tail shank chuck pancetta, ham meatloaf short ribs sausage rump turkey kevin pork chop landjaeger. Doner boudin short ribs t-bone, jerky shankle bresaola drumstick. Strip steak shank spare ribs boudin doner short ribs. Boudin prosciutto jowl tenderloin tongue beef ribs, short ribs salami short loin strip steak ham jerky. Shank pancetta beef ribs, corned beef ham hock pork belly drumstick tail bresaola chuck.&lt;/p&gt;
-    &lt;/div&gt;
-    &lt;div class="gap gap-100" style="background-image:url(images/kitteh2.jpg);"&gt;&lt;/div&gt;
-    &lt;div class="content content-full" id="kittens"&gt;
+        <p>Chicken pancetta capicola chuck, turkey meatball jerky frankfurter kielbasa ball tip bacon ground round. Beef ribs brisket meatloaf short ribs landjaeger shankle spare ribs sausage, pancetta swine sirloin flank. Tail shank chuck pancetta, ham meatloaf short ribs sausage rump turkey kevin pork chop landjaeger. Doner boudin short ribs t-bone, jerky shankle bresaola drumstick. Strip steak shank spare ribs boudin doner short ribs. Boudin prosciutto jowl tenderloin tongue beef ribs, short ribs salami short loin strip steak ham jerky. Shank pancetta beef ribs, corned beef ham hock pork belly drumstick tail bresaola chuck.</p>
+    </div>
+    <div class="gap gap-100" style="background-image:url(images/kitteh2.jpg);"></div>
+    <div class="content content-full" id="kittens">
         Here be kittens
-    &lt;/div&gt;
-    &lt;div class="gap gap-50" style="background-image:url(images/kitteh3.jpg);"&gt;&lt;/div&gt;
-    &lt;div class="content" id="done"&gt;
-        Images from &lt;a href="http://placekitten.com/attribution.html"&gt;http://placekitten.com/&lt;/a&gt;, thanks!
-    &lt;/div&gt;
-&lt;/div&gt;
+    </div>
+    <div class="gap gap-50" style="background-image:url(images/kitteh3.jpg);"></div>
+    <div class="content" id="done">
+        Images from <a href="http://placekitten.com/attribution.html">http://placekitten.com/</a>, thanks!
+    </div>
+</div>
 
-&lt;script type="text/javascript" src="js/skrollr.min.js"&gt;&lt;/script&gt;
-&lt;script type="text/javascript"&gt;
+<script type="text/javascript" src="js/skrollr.min.js"></script>
+<script type="text/javascript">
 skrollr.init({
     smoothScrolling: false,
     mobileDeceleration: 0.004
 });
-&lt;/script&gt;
-</code></pre>
+</script>
 
-<p></p>
 
-<p></p>
-
-      <footer class="site-footer">
-
-        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
-      </footer>
-
-    </section>
 
   
   </body>
 </html>
-
